@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://platform.linkedin.com ">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+        <h1>
+          Réunion Mentor<br>
+          <span>B</span>
+          <span>I</span>
+          <span>N</span>
+          <span>G</span>
+          <span>O</span>
+        </h1>
+        <!-- Warning: the following code sucks, but it works, damn it! -->
+        <div class="grid">
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="1" onclick="changeColor(1)"><span>1</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="2" onclick="changeColor(2)"><span>2</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="3" onclick="changeColor(3)"><span>3</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="4" onclick="changeColor(4)"><span>4</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="5" onclick="changeColor(5)"><span>5</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="6" onclick="changeColor(6)"><span>6</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="7" onclick="changeColor(7)"><span>7</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="8" onclick="changeColor(8)"><span>8</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="9" onclick="changeColor(9)"><span>9</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="10" onclick="changeColor(10)"><span>10</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="11" onclick="changeColor(11)"><span>11</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="12" onclick="changeColor(12)"><span>12</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="13" onclick="changeColor(13)"><span>13</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="14" onclick="changeColor(14)"><span>14</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="15" onclick="changeColor(15)"><span>15</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="16" onclick="changeColor(16)"><span>16</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="17" onclick="changeColor(17)"><span>17</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="18" onclick="changeColor(18)"><span>18</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="19" onclick="changeColor(19)"><span>19</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="20" onclick="changeColor(20)"><span>20</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="21" onclick="changeColor(21)"><span>21</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="22" onclick="changeColor(22)"><span>22</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="23" onclick="changeColor(23)"><span>23</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="24" onclick="changeColor(24)"><span>24</span></div>
+          </label>
+          <label>
+            <input type="checkbox">
+            <div class="mark" id="25" onclick="changeColor(25)"><span>25</span></div>
+          </label>
+        </div>
+      </main>
+      <script src="script.js"></script>
+      <script>
+        function changeColor(slot) {
+            var elem = document.getElementById(`${slot}`);
+            if (elem.classList.contains("mark")) {
+                elem.classList.add("markvalid");
+                elem.classList.remove("mark");
+            }
+            else {
+                elem.classList.remove("markvalid");
+                elem.classList.add("mark");
+            }
+        }
+    </script>
+  </body>
+</html>
